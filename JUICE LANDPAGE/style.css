@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Ancizar Serif", serif;
+}
+section {
+  padding: 20px 40px;
+}
+
+/* Header */
+.header_first {
+  background-image: -webkit-linear-gradient(90deg, rgba(252,126,9,0.959) 36.011%, rgba(248,26,1,0.911) 100%), url("./image/high-angle-watermelon-cocktail-glasses-with-mint-straws.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav_header {
+  background-color: transparent;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  border: 2px solid rgb(55, 12, 247);
+  padding: 3px 5px;
+  border-radius: 20px;
+}
+
+/* Responsive Navbar */
+@media(max-width:768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgba(252,126,9,0.596) 36.011%, rgba(148,134,133,0.747) 100%);
+    position: absolute;
+    top: 80px;
+    margin: 10px;
+    padding: 12px 16px;
+    right: 40px;
+    width: 400px;
+    height: 400px;
+  }
+  .nav-links a {
+    color: #0732f1; 
+    font-size: 25px;
+  }
+  .nav-links.show {
+    display: flex;
+    gap: 10px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+@media(max-width:375px) {
+  .nav-links {
+    width: 300px;
+    height: 100vh;
+  }
+}
+
+/* Banner */
+.banner-header {
+  max-width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  gap: 160px;
+  justify-content: center;
+  align-items: center;
+}
+.banner_text {
+  color: #fff;
+  margin-top: 20px;
+}
+.banner_text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.banner_text h3,
+.banner_text p {
+  margin-bottom: 25px;
+}
+.banner-header .banner_image img {
+  width: 100%;
+}
+.btn {
+  color: rgb(246, 121, 20);
+  padding: 15px 32px;
+  border: none;
+  cursor: pointer;
+}
+@media(max-width:768px) {
+  .banner-header { 
+    flex-wrap: wrap;
+  }
+  .banner_text {
+    padding-top: 40px;
+  }
+  .banner-header .banner_image img {
+    position: relative;
+    top: 20px;
+  }
+}
+
+/* About */
+.About_second {
+  background-color: rgba(180, 180, 170, 0.884);
+  background-image: url('./image/colorful-citrus-fruit-slices-corner-white-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 60px;
+  justify-content: end;
+  align-items: center;
+}
+.About_Span {
+  color: rgb(246, 121, 20);
+}
+.btn_color {
+  color: white;
+  background-color: rgb(246, 121, 20);
+}
+.About_text {
+  word-spacing: 20px;
+  line-height: 40px;
+  padding-right: 40px;
+}
+
+/* Contact */
+.Form_section { 
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.Form_contact h2 {
+  padding: 10px;
+  margin-left: 20px;
+}
+.contact_image {
+  padding: 40px;
+}
+.contact_image img {
+  filter: drop-shadow(8px 8px 10px rgb(246,121,20));
+  width: 500px;
+}
+.my_form { 
+  background-color: rgba(228, 228, 224, 0.733);
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 16px;
+}
+.my_form input {
+  border: none;
+  width: 300px;
+  margin: 20px;
+  padding: 12px 14px;
+  max-width: 100%;
+}
+textarea {
+  position: relative;
+  left: 20px;
+  padding-top: 30px;
+  width: 300px;
+  resize: none;
+  border: none;
+  max-width: 100%;
+}
+.space {
+  margin-top: 30px;
+  position: relative;
+  left: 120px;
+}
+@media(max-width:768px) {
+  .Form_section {
+    flex-wrap: wrap;
+  }
+}
+@media(max-width:375px) {
+  .contact_image img {
+    width: 300px;
+  }
+  .Form_section {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+}
+
+/* Content Section */
+.content-container {
+  transition: all 1s ease-in-out;
+  background-image: -webkit-linear-gradient(90deg, rgba(252,126,9,0.959) 36.011%, rgba(248,26,1,0.911) 100%);
+}
+.content_juice {
+  display: flex;
+  color: #fff;
+  word-spacing: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.juice_text {
+  padding: 20px;
+}
+.juice_text h2 {
+  margin-bottom: 20px;
+}
+#myimage {
+  transition: opacity 10s ease;
+}
+@media(max-width:768px) {
+  .content_juice {
+    flex-wrap: wrap;
+  }
+  .content_juice img {
+    width: 100%;
+  }
+}
+
+/* Testimonial */
+.Testimonial_heading {
+  padding: 25px;
+  background-image: -webkit-linear-gradient(90deg, rgba(207,202,197,0.849) 36.011%, rgba(219,216,215,0.911) 100%), url("./image/high-angle-watermelon-cocktail-glasses-with-mint-straws.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Testimonial_heading h2 {
+  text-align: center;
+  padding: 15px;
+}
+.Testimonial_heading p {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.Testimonial_card {
+  display: flex;
+  margin: auto;
+  width: 900px;
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: 2px 2px 3px 3px rgba(46, 45, 44, 0.747);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Testimonial_card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  bottom: 50px;
+  border: 10px solid rgba(248,26,1,0.911);
+}
+.Testimonial_card div {
+  text-align: center;
+  font-weight: 600;
+  line-height: 24px;
+}
+.Testimonial_card span {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 45px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+@media(max-width:768px) {
+  .Testimonial_card {
+    width: 400px;
+  }
+}
+@media(max-width:375px) {
+  .Testimonial_card {
+    width: 250px;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+.footer span {
+  color: rgb(246,121,20);
+  padding: 5px;
+}
+.footer p {
+  padding: 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid whitesmoke;
+}
+.footer div {
+  padding: 15px;
+}
